@@ -1,0 +1,124 @@
+extends layout
+
+block content
+  div
+    a.hidden-print(href='javascript:window.print()')
+      span.glyphicon.glyphicon-print
+      |  Print
+  h2
+    | Patrick Ryan Purcell
+    small  Developer / Programmer&nbsp;
+    img.img-circle(width='100px', src='/img/profile.jpg')
+  address
+    a(href='mailto:patrick.ryan.purcell@gmail.com', target='_blank')
+      span.glyphicon.glyphicon-envelope
+      |  patrick.ryan.purcell@gmail.com
+    br
+    a(href='tel:281-733-9242')
+      span.glyphicon.glyphicon-phone
+      |  281-733-9242
+    br
+    a(href='https://www.linkedin.com/profile/view?id=24210275&trk=nav_responsive_tab_profile', target='_blank')
+      span.fa.fa-linkedin-square
+      |  LinkedIn
+  p
+    em.small Dedicated to designing simple, elegant and effective solutions
+  p
+    | I happen to be lucky enough to do what I love to do.  Designing and creating
+    | helpful solutions to problems is not "work" to me but something I enjoy.
+  h3 Work History
+    h4 Gexa Energy
+      p Jan 2012 - present
+      p Team Lead / Developer (up to 8 employees reporting to me)
+      ul
+        li Prioritize workload for all of my employees
+        li Managed expectations and outcomes of projects
+        li MVC web development including our commercial portal
+        li Oracle database design and maintenance
+        li Help transfer knowledge of newer technolgies to other employees
+        li Involved in the vetting and hiring of new employees
+        li Helped business turn functional requirements into technical requirements
+    h4 Weatherford Labs
+      p Nov 2008 - Jan 2012
+      p Web Developer/Programmer
+      ul
+        li Inventory system for logistics and tracking of all samples
+        li Project management system for tracking job updates
+        li Defining requirements for changes to project management and inventory systems
+        li Sql Server database design and management
+        li Upgraded current system from classic asp to asp.net and then to MVC
+        li
+          | Developed restful web services to decreas load times for our project management software
+    h4 Lynton Web
+      p Aug 2007 - Oct 2008
+      p Web Developer/Programmer
+      ul
+        li Developed custom websites using asp.net (2.0 and 3.5)
+        li Developed custom CMS websites using Telerik’s Sitefinity and DotNetNuke
+        li
+          | Designed and managed databases using MS Sql Server 2005 for use in custom websites
+        li Used javascript for simple client operations needed for several custom websites
+        li Communicated with customers directly to assess project requirements
+  .hidden-print
+    h3
+      | My skillset
+      small  % of knowledge
+    div(style='box-shadow: 3px 3px 3px gray; padding: 20px 10px 1px 10px; background: silver;')
+      .progress
+        .progress-bar(style='width: 95%;') ASP.Net
+      .progress
+        .progress-bar(style='width: 95%;') MVC
+      .progress
+        .progress-bar(style='width: 65%;') Javascript (as a whole... there's a lot to know)
+      .progress
+        .progress-bar(style='width: 85%;') jQuery
+      .progress
+        .progress-bar(style='width: 85%;') jQuery UI
+      .progress
+        .progress-bar(style='width: 85%;') CSS
+      .progress
+        .progress-bar.progress-success(style='width: 65%;') Less
+      .progress
+        .progress-bar.progress-success(style='width: 80%;') Bootstrap
+      .progress
+        .progress-bar.progress-success(style='width: 45%;') node.js
+      .progress
+        .progress-bar.progress-success(style='width: 45%;') git
+      .progress
+        .progress-bar.progress-success(style='width: 65%;') Oracle
+      .progress
+        .progress-bar.progress-success(style='width: 75%;') Sql Server
+      .progress
+        .progress-bar.progress-success(style='width: 95%;') Ajax / Restful Web Services
+      .progress
+        .progress-bar.progress-success(style='width: 75%;') TFS
+
+  .visible-print
+    h2 Skills
+    ul
+      li
+        | 5+ years experience
+        ul
+          li ASP.Net
+          li MVC
+          li Javascript
+          li jQuery
+          li jQuery UI
+          li CSS
+          li Sql Server
+          li Ajax / Restful Web Services
+      li
+        | 2+ years experience
+        ul
+          li Oracle
+          li TFS
+      li
+        | 1+ years experience
+        ul
+          li Less
+          li Bootstrap
+      li
+        | New Interests
+        ul
+          li node.js
+          li git

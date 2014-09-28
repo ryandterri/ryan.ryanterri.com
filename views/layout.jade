@@ -1,0 +1,71 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+
+    title= title
+
+    link(rel='stylesheet', href='/stylesheets/site.min.css')
+    script(src='/javascripts/site.min.js', type='text/javascript')
+
+  body(style='padding-top: 70px;')
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/home/aboutme') Ryan Purcell
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Quick Links
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='/home/resume') Full Resume
+                li
+                  a(href='/home/aboutme') About Me
+                li
+                  a(href='/home/workhistory') Work History
+                li
+                  a(href='/home/skills') Skills
+                li
+                  a(href='/home/education') Education
+                li
+                  a(href='/home/references') References
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Interests
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(target='_blank', href='http://nodejs.org/')
+                    i.icon-nodejs
+                    |  nodejs
+                li
+                  a(target='_blank', href='http://nginx.org')
+                    i.icon-nginx
+                    |  nginx
+                li
+                  a(target='_blank', href='http://jquery.com') jQuery
+                li
+                  a(target='_blank', href='http://jqueryui.com') jQuery UI
+                li
+                  a(target='_blank', href='http://lesscss.org') Less
+                li
+                  a(target='_blank', href='http://getbootstrap.com/') Bootstrap
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='tel:281-733-9242')
+                span.glyphicon.glyphicon-phone
+                |  281-733-9242
+            li
+              a(href='mailto:patrick.ryan.purcell@gmail.com', target='_blank')
+                span.glyphicon.glyphicon-envelope
+                |  patrick.ryan.purcell@gmail.com
+    .container
+      block content
