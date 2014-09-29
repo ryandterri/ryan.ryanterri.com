@@ -36,13 +36,13 @@ html
                     i.icon-nginx
                     |  nginx
                 li
-                  a(target='_blank', href='http://bitbucket.org')
-                    i.fa.fa-bitbucket
-                    |  bitbucket
+                  a(target='_blank', href='http://jquery.com') jQuery
                 li
-                  a(target='_blank', href='http://www.ubuntu.com/')
-                    i.icon-ubuntu
-                    |  ubuntu
+                  a(target='_blank', href='http://jqueryui.com') jQuery UI
+                li
+                  a(target='_blank', href='http://lesscss.org') Less
+                li
+                  a(target='_blank', href='http://getbootstrap.com/') Bootstrap
           ul.nav.navbar-nav.navbar-right
             li
               a(href='tel:281-733-9242')
