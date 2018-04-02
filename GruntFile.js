@@ -4,6 +4,24 @@
 module.exports = function(grunt){
 
     grunt.initConfig({
+        copy: {
+            fonts: {
+                files: [{
+                    expand: true,
+                    cwd: 'bower_components/bootstrap/',
+                    src: ['fonts/**'],
+                    dest: 'public/'
+                }]
+            },
+            webfonts: {
+                files: [{
+                    expand: true,
+                    cwd: 'bower_components/font-awesome/web-fonts-with-css/',
+                    src: ['webfonts/**'],
+                    dest: 'public/'
+                }]
+            }
+        },
         concat: {
             development: {
                 src: ['bower_components/jquery/dist/jquery.js', 'bower_components/bootstrap/dist/js/bootstrap.js'],
@@ -14,7 +32,7 @@ module.exports = function(grunt){
             development:{
                 files: {
                     'src/css/bootstrap.css': 'src/less/bootstrap.less',
-                    'src/css/font-awesome.css': 'bower_components/font-awesome/less/font-awesome.less'
+                    'src/css/font-awesome.css': 'bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.css'
                 }
             }
         },
@@ -31,25 +49,9 @@ module.exports = function(grunt){
                     'public/stylesheets/site.min.css': ['src/css/*.css']
                 }
             }
-        },
-        watch: {
-            uglify: {
-                files: 'src/scripts/*.js',
-                tasks: 'uglify'
-            },
-            cssmin: {
-                files: 'src/css/*.css',
-                tasks: 'cssmin',
-                options: {
-                    livereload: true
-                }
-            },
-            less: {
-                files: 'src/less/*.less',
-                tasks: 'less'
-            }
         }
     });
 
     require('load-grunt-tasks')(grunt);
+    grunt.registerTask('build', ['copy', 'concat', 'uglify', 'less', 'cssmin']);
 };
