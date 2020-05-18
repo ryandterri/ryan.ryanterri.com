@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/ryandterri/ryan.ryanterri.com/compare/v0.0.1...v1.0.0) (2020-05-18)
+
+
+### Features
+
+* **style:** restyled site in vuetify ([8203d26](https://github.com/ryandterri/ryan.ryanterri.com/commit/8203d269468706bf9f692d451420aad6ebad915b))
+
+
+### Bug Fixes
+
+* **remove:** removed unused file ([5536112](https://github.com/ryandterri/ryan.ryanterri.com/commit/55361128215659f7fd0cfe188e332c80e002d02c))
+* **update:** updated resume and photo ([6a13c57](https://github.com/ryandterri/ryan.ryanterri.com/commit/6a13c572853dc7709ff4a676a033fc9c9c48e975))
+
 ### 0.0.1 (2020-04-06)
 
 
