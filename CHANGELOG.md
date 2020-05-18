@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/ryandterri/ryan.ryanterri.com/compare/v1.0.0...v1.0.1) (2020-05-18)
+
+
+### Bug Fixes
+
+* **interests:** added homemade salsa :) ([f10a3e4](https://github.com/ryandterri/ryan.ryanterri.com/commit/f10a3e435ae86c96e63e75ac9afd96a2da5d1674))
+
 ## [1.0.0](https://github.com/ryandterri/ryan.ryanterri.com/compare/v0.0.1...v1.0.0) (2020-05-18)
 
 
