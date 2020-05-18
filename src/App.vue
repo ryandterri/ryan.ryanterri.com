@@ -83,29 +83,10 @@
                             Interests
                         </v-card-title>
                         <v-card-text>
-                            <v-list-item>
+                            <v-list-item v-for="(interest, index) in interests" :key="index">
                                 <v-list-item-content>
-                                    <v-list-item-title>Tesla</v-list-item-title>
-                                    <v-list-item-subtitle>Got mine in March of 2020 and I love it.
-                                    </v-list-item-subtitle>
-                                </v-list-item-content>
-                            </v-list-item>
-                            <v-list-item>
-                                <v-list-item-content>
-                                    <v-list-item-title>CI/CD</v-list-item-title>
-                                    <v-list-item-subtitle>
-                                        The simplicity of being able to check in code
-                                        and have it build, test and deploy is amazing.
-                                    </v-list-item-subtitle>
-                                </v-list-item-content>
-                            </v-list-item>
-                            <v-list-item>
-                                <v-list-item-content>
-                                    <v-list-item-title>CI/CD</v-list-item-title>
-                                    <v-list-item-subtitle>
-                                        The simplicity of being able to check in code
-                                        and have it build, test and deploy is amazing.
-                                    </v-list-item-subtitle>
+                                    <v-list-item-title>{{interest.title}}</v-list-item-title>
+                                    <v-list-item-subtitle>{{interest.description}}</v-list-item-subtitle>
                                 </v-list-item-content>
                             </v-list-item>
                         </v-card-text>
@@ -184,6 +165,17 @@
                     title: 'Software Developer',
                     dates: 'November 2008 - January 2012',
                     description: 'Created / Upgraded our project management system from classic asp to .Net Mvc.'
+                },
+            ],
+            interests: [
+                {title: 'Tesla', description: 'Got mine in March of 2020 and I love it.'},
+                {
+                    title: 'CI/CD',
+                    description: 'The simplicity of being able to check in code and have it build, test and deploy is amazing.'
+                },
+                {
+                    title: 'Homemade Salsa',
+                    description: 'Fresh ingredients. Great seasoning. Crisp chips. What else do you need?'
                 },
             ]
         }),
