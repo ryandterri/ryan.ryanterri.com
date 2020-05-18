@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/ryandterri/ryan.ryanterri.com/compare/v1.0.1...v1.0.2) (2020-05-18)
+
+
+### Bug Fixes
+
+* **links:** fixed targets for links ([fe18cd4](https://github.com/ryandterri/ryan.ryanterri.com/commit/fe18cd4c8a11cdf16d00424264eff7a3bb33cf3a))
+
 ### [1.0.1](https://github.com/ryandterri/ryan.ryanterri.com/compare/v1.0.0...v1.0.1) (2020-05-18)
 
 
