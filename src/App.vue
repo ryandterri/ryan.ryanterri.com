@@ -8,7 +8,7 @@
                         <v-toolbar-title>{{profile.name}}</v-toolbar-title>
                         <v-spacer></v-spacer>
                         <v-btn v-for="(contact_item, index) in profile.contact_items" :key="index" icon
-                               :href="contact_item.link">
+                               :href="contact_item.link" :target="contact_item.target ? contact_item.target : '_parent'">
                             <v-icon>{{contact_item.icon}}</v-icon>
                         </v-btn>
                     </v-app-bar>
@@ -37,7 +37,8 @@
                         <v-card-title>Contact</v-card-title>
                         <v-card-text>
                             <v-list-item v-for="contact_item in profile.contact_items" :key="contact_item.value"
-                                         :href="contact_item.link">
+                                         :href="contact_item.link"
+                                         :target="contact_item.target ? contact_item.target : '_parent'">
                                 <v-list-item-icon>
                                     <v-icon>{{contact_item.icon}}</v-icon>
                                 </v-list-item-icon>
@@ -71,7 +72,7 @@
                                 <v-list-item-content>
                                     <v-list-item-title>University of Houston</v-list-item-title>
                                     <v-list-item-title>Bachelors of Science</v-list-item-title>
-                                    <v-list-item-subtitle>January 2002 - August 2007</v-list-item-subtitle>
+                                    <v-list-item-subtitle>2005 - 2007</v-list-item-subtitle>
                                     <v-list-item-subtitle>
                                         Major in Computer Science
                                     </v-list-item-subtitle>
@@ -119,9 +120,15 @@
                     {
                         icon: 'mdi-linkedin',
                         value: 'https://www.linkedin.com/in/ryan-purcell-6ab1368/ ',
-                        link: 'https://www.linkedin.com/in/ryan-purcell-6ab1368/ '
+                        link: 'https://www.linkedin.com/in/ryan-purcell-6ab1368/ ',
+                        target: '_blank'
                     },
-                    {icon: 'mdi-github', value: 'https://github.com/ryandterri', link: 'https://github.com/ryandterri'},
+                    {
+                        icon: 'mdi-github',
+                        value: 'https://github.com/ryandterri',
+                        link: 'https://github.com/ryandterri',
+                        target: '_blank'
+                    },
                 ]
             },
             skills: [
@@ -149,7 +156,7 @@
                     description: 'Developing an api for 3rd party brokers to send us new client sign ups. One version in C# Mvc with Oracle and one using Node.js with mongodb. Secured with jwt tokens.'
                 },
                 {
-                    company: 'Weaterford Labs',
+                    company: 'Weatherford Labs',
                     title: 'IT Technical Architect',
                     dates: 'January 2015 - August 2016',
                     description: 'Created a web api for the internal LIMS system using C# and Sql Server. Also created a new frontend for the LIMS system using .Net Mvc and angularjs.'
@@ -161,7 +168,7 @@
                     description: 'Managed outcomes and expectations for projects assigned to my team. Team size consisted of 4-8 developers. Also created a new ui and backend for our commercial portal.'
                 },
                 {
-                    company: 'Weaterford Labs',
+                    company: 'Weatherford Labs',
                     title: 'Software Developer',
                     dates: 'November 2008 - January 2012',
                     description: 'Created / Upgraded our project management system from classic asp to .Net Mvc.'
