@@ -15,12 +15,12 @@ import ResumeHeader from "./components/ResumeHeader.vue";
 </script>
 
 <template>
-  <div class="mx-auto container my-10 rounded-2xl border-l-slate-700 border-r-slate-700 border border-b-slate-700">
+  <div class="mx-auto container sm:my-10 rounded-2xl border-l-slate-700 border-r-slate-700 border border-b-slate-700">
     <div class="h-28 bg-slate-700 items-center flex px-8 gap-4 rounded-t-2xl">
-      <div>
-        <img src="./assets/profile_alt.jpg" alt="profile" class="rounded-full mt-16 h-32 w-36 object-fill"/>
+      <div class="hidden sm:block h-36 w-36">
+        <img src="./assets/profile_alt.jpg" alt="profile" class="rounded-full mt-16 object-fill"/>
       </div>
-      <div class="text-white w-full px-10 flex items-center justify-between">
+      <div class="text-white w-full px-10 flex flex-col sm:flex-row gap-2 items-center justify-between">
         <div>
           <div class="text-2xl font-bold"> Patrick Ryan Purcell</div>
           <div>Software Developer / Architect</div>
@@ -40,7 +40,9 @@ import ResumeHeader from "./components/ResumeHeader.vue";
     </div>
     <!--  <side-bar></side-bar>-->
 
-    <div class="py-4 my-10 bg-white text-black px-8">
+    <div class="py-4 sm:my-10 bg-white text-black px-8">
+
+      <img src="./assets/profile_alt.jpg" alt="profile" class="rounded-full sm:hidden h-32 w-32 object-fill"/>
 
       <resume-header id="about">About Me</resume-header>
 
