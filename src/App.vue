@@ -15,75 +15,91 @@ import ResumeHeader from "./components/ResumeHeader.vue";
 </script>
 
 <template>
-  <side-bar></side-bar>
+  <div class="mx-auto container my-10 rounded-2xl border-l-slate-700 border-r-slate-700 border border-b-slate-700">
+    <div class="h-28 bg-slate-700 items-center flex px-8 gap-4 rounded-t-2xl">
+      <div>
+        <img src="./assets/profile_alt.jpg" alt="profile" class="rounded-full mt-16 h-32 w-36 object-fill"/>
+      </div>
+      <div class="text-white w-full px-10 flex items-center justify-between">
+        <div>
+          <div class="text-2xl font-bold"> Patrick Ryan Purcell</div>
+          <div>Software Developer / Architect</div>
+        </div>
+        <div class="flex items-center gap-6 text-white">
+          <a href="mailto:patrick.ryan.purcell@gmail.com">
+            <inbox-arrow-down-icon class="h-6 w-6 fill-current"></inbox-arrow-down-icon>
+          </a>
+          <a href="https://github.com/ryandterri" target="_blank">
+            <git-hub-icon class="h-6 w-6 fill-current"></git-hub-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/ryan-purcell-6ab1368/" target="_blank">
+            <linked-in-icon class="h-6 w-6 fill-current"></linked-in-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--  <side-bar></side-bar>-->
 
-  <div class="p-4 sm:ml-64 bg-white text-black h-screen ">
+    <div class="py-4 my-10 bg-white text-black px-8">
 
-    <div id="about" class="text-2xl font-bold mb-4">About Me</div>
+      <resume-header id="about">About Me</resume-header>
 
-    <div>{{ profile.name }}</div>
-    <div>{{ profile.headline }}</div>
-    <div>{{ profile.description }}</div>
+      <div>{{ profile.name }}</div>
+      <div>{{ profile.headline }}</div>
+      <div>{{ profile.description }}</div>
 
-    <resume-header id="experience" class="text-2xl font-bold my-4" text="Experience"></resume-header>
+      <resume-header id="experience">Experience</resume-header>
 
-    <ol class="relative border-s border-gray-200 dark:border-gray-700 ml-4">
-      <li class="mb-10 ms-4" v-for="history in work_history" :key="history.dates">
-        <div
-            class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-500">{{ history.dates }}</time>
-        <h3 class="text-lg font-semibold text-gray-900">{{ history.title }} at {{ history.company }}
-          <!--          <gexa-icon class="h-10"></gexa-icon>-->
-          <!--          <weatherford-icon class="h-10"></weatherford-icon>-->
-          <!--          <comparepower-icon class="h-10"></comparepower-icon>-->
-        </h3>
-        <p class="mb-4 text-base font-normal text-gray-600">
-          {{ history.description }}
-        </p>
-      </li>
-    </ol>
+      <ol class="relative border-s border-gray-200 dark:border-gray-700 ml-4">
+        <li class="mb-10 ms-4" v-for="history in work_history" :key="history.dates">
+          <div
+              class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-500">{{ history.dates }}</time>
+          <h3 class="text-lg font-semibold text-gray-900">{{ history.title }} at {{ history.company }}
+            <!--          <gexa-icon class="h-10"></gexa-icon>-->
+            <!--          <weatherford-icon class="h-10"></weatherford-icon>-->
+            <!--          <comparepower-icon class="h-10"></comparepower-icon>-->
+          </h3>
+          <p class="mb-4 text-base font-normal text-gray-600">
+            {{ history.description }}
+          </p>
+        </li>
+      </ol>
 
-    <resume-header id="skills" class="font-bold text-xl ml-2 mb-4" text="Skills"></resume-header>
+      <resume-header id="skills">Skills</resume-header>
 
-    <ul class="font-medium flex items-center gap-4">
-      <li>
-        <a href="https://vuejs.org/" target="_blank"
-           class="flex items-center py-2 px-4 rounded-full bg-slate-700 gap-4 text-white">
-          <vue-js-icon class="h-6 w-6"></vue-js-icon>
-          <span>Vue.js</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://nodejs.org" target="_blank"
-           class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
-          <node-js-icon class="h-6 w-6"></node-js-icon>
-          <span>Node.js</span>
-        </a>
-      </li>
-      <li>
-        <a class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
-          <tailwind-icon class="h-6 w-6"></tailwind-icon>
-          <span>Tailwind CSS</span>
-        </a>
-      </li>
-      <li>
-        <a class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
-          <mongo-db-icon class="h-6 w-6"></mongo-db-icon>
-          <span>MongoDb</span>
-        </a>
-      </li>
-    </ul>
+      <ul class="font-medium space-y-2 max-w-2xl">
+        <li>
+          <a href="https://vuejs.org/" target="_blank"
+             class="flex items-center py-2 px-4 rounded-full bg-slate-700 gap-4 text-white">
+            <vue-js-icon class="h-6 w-6"></vue-js-icon>
+            <span>Vue.js</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://nodejs.org" target="_blank"
+             class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
+            <node-js-icon class="h-6 w-6"></node-js-icon>
+            <span>Node.js</span>
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
+            <tailwind-icon class="h-6 w-6"></tailwind-icon>
+            <span>Tailwind CSS</span>
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
+            <mongo-db-icon class="h-6 w-6"></mongo-db-icon>
+            <span>MongoDb</span>
+          </a>
+        </li>
+      </ul>
 
-    <div id="get_in_touch" class="text-2xl font-bold my-4">Contact Me</div>
-
-    <div class="flex items-center justify-start gap-4">
-      <inbox-arrow-down-icon class="h-6 w-6"></inbox-arrow-down-icon>
-      <git-hub-icon class="h-6 w-6"></git-hub-icon>
-      <linked-in-icon class="h-6 w-6"></linked-in-icon>
     </div>
 
   </div>
-
 
 </template>
 

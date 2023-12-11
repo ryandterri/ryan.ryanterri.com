@@ -1,12 +1,13 @@
 <script setup>
 defineProps({
-  id: String,
-  text: String
+  id: String
 })
 </script>
 
 <template>
-  <div :id="id" class="text-2xl font-bold my-4">{{ text }}</div>
+  <div :id="id" class="text-2xl font-bold my-4 underline">
+    <slot></slot>
+  </div>
 </template>
 
 <style scoped>
