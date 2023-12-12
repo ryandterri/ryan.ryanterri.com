@@ -1,16 +1,12 @@
 <script setup>
 import { profile, work_history, interests, contact_links } from "./composables/profile.js";
 import { InboxArrowDownIcon, ClockIcon, ChatBubbleBottomCenterTextIcon, LightBulbIcon } from '@heroicons/vue/24/solid'
-import SideBar from "./components/SideBar.vue";
 import GitHubIcon from "./components/icons/GitHubIcon.vue";
 import LinkedInIcon from "./components/icons/LinkedInIcon.vue";
 import MongoDbIcon from "./components/icons/MongoDbIcon.vue";
 import VueJsIcon from "./components/icons/VueJsIcon.vue";
 import NodeJsIcon from "./components/icons/NodeJsIcon.vue";
 import TailwindIcon from "./components/icons/TailwindIcon.vue";
-import GexaIcon from "./components/icons/GexaIcon.vue";
-import WeatherfordIcon from "./components/icons/WeatherfordIcon.vue";
-import ComparepowerIcon from "./components/icons/ComparepowerIcon.vue";
 import ResumeHeader from "./components/ResumeHeader.vue";
 </script>
 
@@ -38,7 +34,6 @@ import ResumeHeader from "./components/ResumeHeader.vue";
         </div>
       </div>
     </div>
-    <!--  <side-bar></side-bar>-->
 
     <div class="py-4 sm:my-10 bg-white text-black px-8">
 
@@ -46,9 +41,8 @@ import ResumeHeader from "./components/ResumeHeader.vue";
 
       <resume-header id="about">About Me</resume-header>
 
-      <div>{{ profile.name }}</div>
-      <div>{{ profile.headline }}</div>
-      <div>{{ profile.description }}</div>
+      <p class="my-2 italic">{{ profile.headline }}</p>
+      <p class="my-2">{{ profile.description }}</p>
 
       <resume-header id="experience">Experience</resume-header>
 
@@ -57,10 +51,8 @@ import ResumeHeader from "./components/ResumeHeader.vue";
           <div
               class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-500">{{ history.dates }}</time>
-          <h3 class="text-lg font-semibold text-gray-900">{{ history.title }} at {{ history.company }}
-            <!--          <gexa-icon class="h-10"></gexa-icon>-->
-            <!--          <weatherford-icon class="h-10"></weatherford-icon>-->
-            <!--          <comparepower-icon class="h-10"></comparepower-icon>-->
+          <h3 class="text-lg font-semibold text-gray-900">
+            {{ history.title }} at {{ history.company }}
           </h3>
           <p class="mb-4 text-base font-normal text-gray-600">
             {{ history.description }}
