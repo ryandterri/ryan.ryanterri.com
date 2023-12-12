@@ -15,8 +15,8 @@ import ResumeHeader from "./components/ResumeHeader.vue";
 </script>
 
 <template>
-  <div class="mx-auto container sm:my-10 rounded-2xl border-l-slate-700 border-r-slate-700 border border-b-slate-700">
-    <div class="h-28 bg-slate-700 items-center flex px-8 gap-4 rounded-t-2xl">
+  <div class="mx-auto container sm:my-10 sm:rounded-2xl border-slate-700 border">
+    <div class="h-28 bg-slate-700 items-center flex px-8 gap-4 sm:rounded-t-2xl">
       <div class="hidden sm:block h-36 w-36">
         <img src="./assets/profile_alt.jpg" alt="profile" class="rounded-full mt-16 object-fill"/>
       </div>
