@@ -78,13 +78,15 @@ import ResumeHeader from "./components/ResumeHeader.vue";
           </a>
         </li>
         <li>
-          <a class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
+          <a href="https://tailwindcss.com/" target="_blank"
+             class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
             <tailwind-icon class="h-6 w-6"></tailwind-icon>
             <span>Tailwind CSS</span>
           </a>
         </li>
         <li>
-          <a class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
+          <a href="https://mongodb.com" target="_blank"
+             class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
             <mongo-db-icon class="h-6 w-6"></mongo-db-icon>
             <span>MongoDb</span>
           </a>
