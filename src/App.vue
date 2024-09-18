@@ -19,8 +19,8 @@ import ResumeHeader from "./components/ResumeHeader.vue";
           <div>Software Developer / Architect</div>
         </div>
         <div class="flex items-center gap-6 text-white">
-          <a href="mailto:patrick.ryan.purcell@gmail.com">
-            <inbox-arrow-down-icon class="h-6 w-6 fill-current"></inbox-arrow-down-icon>
+          <a href="mailto:ryan@ryanterri.com">
+            <inbox-arrow-down-icon class=" h-6 w-6 fill-current"></inbox-arrow-down-icon>
           </a>
           <a href="https://github.com/ryandterri" target="_blank">
             <git-hub-icon class="h-6 w-6 fill-current"></git-hub-icon>
@@ -34,7 +34,7 @@ import ResumeHeader from "./components/ResumeHeader.vue";
 
     <div class="py-4 sm:my-10 bg-white text-black px-8">
 
-      <img src="./assets/profile_alt.jpg" alt="profile" class="rounded-full mt-0 sm:-mt-32 h-32 w-32 object-fill"/>
+      <img src="./assets/profile_alt.jpg" alt="profile" class="rounded-full mt-0 sm:-mt-32 h-32 w-32 object-fill" />
 
       <resume-header id="about">About Me</resume-header>
 
@@ -45,8 +45,7 @@ import ResumeHeader from "./components/ResumeHeader.vue";
 
       <ol class="relative border-s border-gray-200 dark:border-gray-700 ml-4">
         <li class="mb-10 ms-4" v-for="history in work_history" :key="history.dates">
-          <div
-              class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
+          <div class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
           <time class="mb-1 text-sm font-normal leading-none text-gray-500">{{ history.dates }}</time>
           <h3 class="text-lg font-semibold text-gray-900">
             {{ history.title }} at {{ history.company }}
@@ -62,28 +61,28 @@ import ResumeHeader from "./components/ResumeHeader.vue";
       <ul class="font-medium space-y-2 max-w-2xl">
         <li>
           <a href="https://vuejs.org/" target="_blank"
-             class="flex items-center py-2 px-4 rounded-full bg-slate-700 gap-4 text-white">
+            class="flex items-center py-2 px-4 rounded-full bg-slate-700 gap-4 text-white">
             <vue-js-icon class="h-6 w-6"></vue-js-icon>
             <span>Vue.js</span>
           </a>
         </li>
         <li>
           <a href="https://nodejs.org" target="_blank"
-             class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
+            class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
             <node-js-icon class="h-6 w-6"></node-js-icon>
             <span>Node.js</span>
           </a>
         </li>
         <li>
           <a href="https://tailwindcss.com/" target="_blank"
-             class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
+            class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
             <tailwind-icon class="h-6 w-6"></tailwind-icon>
             <span>Tailwind CSS</span>
           </a>
         </li>
         <li>
           <a href="https://mongodb.com" target="_blank"
-             class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
+            class="flex items-center py-2 px-4 rounded-full gap-4 bg-slate-700 text-white">
             <mongo-db-icon class="h-6 w-6"></mongo-db-icon>
             <span>MongoDb</span>
           </a>
@@ -96,6 +95,4 @@ import ResumeHeader from "./components/ResumeHeader.vue";
 
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
