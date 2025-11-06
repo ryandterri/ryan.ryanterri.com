@@ -8,8 +8,6 @@ on:
 jobs:
   build:
     runs-on: monster
-    container:
-      image: node:20
 
     steps:
       - name: checkout code
