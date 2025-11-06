@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: nuc
+    runs-on: monster
     container:
       image: node:20
 
