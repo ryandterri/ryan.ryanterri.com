@@ -8,7 +8,12 @@ on:
 jobs:
   build:
     runs-on: nuc
+    container:
+      image: node:20
 
     steps:
-      - name: Checkout repo
-        run: git clone "${GITEA_REPOSITORY}" .
+      - name: npm install
+        run: npm install
+
+      - name: build
+        run: npm run build
