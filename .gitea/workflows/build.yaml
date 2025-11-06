@@ -1,0 +1,14 @@
+name: Build app
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: nuc
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
