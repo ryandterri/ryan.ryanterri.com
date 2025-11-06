@@ -38,8 +38,12 @@ import ResumeHeader from "./components/ResumeHeader.vue";
 
       <resume-header id="about">About Me</resume-header>
 
-      <p class="my-2 italic">{{ profile.headline }}</p>
-      <p class="my-2">{{ profile.description }}</p>
+      <p>
+        <span class="font-bold">Senior Software Architect / Full Stack Developer</span> with 15+ years 
+        building scalable applications in Node.js, Vue.js, and MongoDB. Proven leadership in 
+        architecting APIs, internal tools, and customer-facing apps. Passionate about clean code, 
+        modern front-end architecture, and DevOps-aware design.
+      </p>
 
       <resume-header id="experience">Experience</resume-header>
 
